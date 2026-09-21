@@ -1,0 +1,242 @@
+================================================================
+  COLOUR BRICKS CRUSH — PLAY STORE PE KAISE DAALAIN
+  (Detailed Step-by-Step Hinglish Guide)
+================================================================
+
+Aapki 6 files chahiye hongi:
+  1. colour-bricks-game.html  -> poora game (main file)
+  2. manifest.json            -> app ki jaankari
+  3. sw.js                    -> offline ke liye
+  4. icon-512.png             -> app icon (bada)
+  5. icon-192.png             -> app icon (chhota)
+  6. icon-512-maskable.png    -> app icon (maskable version)
+
+================================================================
+STEP 1: APP ICON BANAO (10 minute, FREE)
+================================================================
+
+  - Canva.com kholo (free account)
+  - "Custom size" -> 512 x 512 pixel
+  - Colourful design banao — bade bricks + BOOM wala look
+  - Download as PNG -> naam rakho icon-512.png
+  - Canva mein hi resize karke 192x192 bhi download karo
+    -> icon-192.png
+  - Wahi 512 wala hi icon-512-maskable.png naam se copy kar lo
+    (same image, bas naam alag)
+  - Design simple rakho — chhota dikhta hai phone mein!
+
+  (Shortcut: favicon.io ya	appicon.co pe image upload karke
+   saare sizes ek saath download kar sakte ho)
+
+================================================================
+STEP 2: FREE WEBSITE BANAO — GITHUB PAGES (20 minute)
+================================================================
+
+  1. github.com pe jao -> Sign up (free account)
+  2. Login karke "+" (top right) -> "New repository"
+  3. Repository name: colour-bricks
+     Public select karo -> "Create repository"
+  4. "uploading an existing file" link pe click karo
+  5. Apni 6 files drag karke upload karo:
+     colour-bricks-game.html, manifest.json, sw.js,
+     icon-512.png, icon-192.png, icon-512-maskable.png
+  6. "Commit changes" (green button) dabao
+  7. Ab Settings (top) -> Pages (left menu) ->
+     Branch: "main" select -> Save
+  8. 2-3 minute wait karo. Upar aayega:
+     https://AAPKA-USERNAME.github.io/colour-bricks/
+
+  TEST: Yeh link phone ke Chrome mein kholo:
+  .../colour-bricks/colour-bricks-game.html
+  Game chalna chahiye! Chrome menu (⋮) mein
+  "Add to Home screen" ka option bhi dikhna chahiye.
+  = Yeh matlab sab kuch sahi hai =
+
+================================================================
+STEP 3: ANDROID APP FILE BANAO — PWABUILDER (10 minute)
+================================================================
+
+  1. pwabuilder.com kholo
+  2. Apna pura game link paste karo (Step 2 wala,
+     colour-bricks-game.html tak wala URL) -> "Start"
+  3. Woh website check karega — sab GREEN dikhna chahiye:
+     Manifest ✓ Service Worker ✓ HTTPS ✓ Installable ✓
+  4. "Package for stores" button pe jao
+  5. "Android" chuno
+  6. Options bharo:
+     - Package ID: com.aapkaname.colourbricks
+       (jaise com.dinesh.colourbricks — yeh UNIQUE hona
+        chahiye, baad tak yahi rahega!)
+     - App name: Colour Bricks Crush
+     - Version: 1.0.0
+  7. "Generate" dabao -> .aab file download hogi
+     (Yehi Play Store ki app file hai!)
+  8. "All downloads" mein SIGNING KEY (.zip) bhi milega —
+     USE BAHUT SAMBHAL KE RAKHO!
+     - Google Drive pe backup karo
+     - Apne email pe bhi bhej do
+     - YEH APP KI CHAABI HAI — kho gayi to app update
+       nahi kar paoge, naya account banega!
+
+================================================================
+STEP 4: GOOGLE PLAY DEVELOPER ACCOUNT ($25 = ~₹2,100)
+================================================================
+
+  1. play.google.com/console kholo
+  2. Google account se login karo
+  3. "Create account and pay" -> $25 one-time
+     (Credit/Debit card se jata hai, lifetime ke liye)
+  4. Identity verification hoga (ID proof) — 1-2 din lag
+     sakte hain approval mein
+  5. Developer details bharo (naam, email, phone)
+
+================================================================
+STEP 5: PLAY CONSOLE MEIN APP BANAO
+================================================================
+
+  1. "Create app" button
+  2. App name: Colour Bricks Crush
+     Language: English (yahi rakho, aasan hai)
+     App/Game: GAME
+     Free/Paid: FREE
+  3. "Create" dabao
+
+================================================================
+STEP 6: "APP CONTENT" BHIYAAN — SAB FORM BHARO
+     (left menu mein "App content" section)
+================================================================
+
+  A) PRIVACY POLICY (ZAROORI HAI!):
+     - Ek simple privacy policy page banao:
+       Canva/ChatGPT se simple text likhwao:
+       "This game does not collect any personal data.
+        No ads, no tracking. Contact: aapkaemail@gmail.com"
+     - GitHub repo mein "privacy-policy.html" naam se
+       upload karo (Step 2 jaisa)
+     - Link: .../colour-bricks/privacy-policy.html
+     - Yeh link "Privacy policy" mein paste karo
+
+  B) APP ACCESS: "All functionality is available" select
+
+  C) ADS: "No, my app does not contain ads"
+
+  D) CONTENT RATING:
+     - Questionnaire bharo — simple answers:
+       cartoon violence: NO, gambling: NO, sab NO
+     - Rating milega: EVERYONE ✓
+
+  E) TARGET AUDIENCE:
+     - Age 13+ wala option chuno (13 se kam wala mat
+       chuno — Families policy bahut strict hai)
+
+  F) DATA SAFETY:
+     - "Does your app collect or share user data?" -> NO
+     - "Does your app use encryption?" -> bas aisa hi
+       default rakho (HTTPS)
+     - Baaki sab NO/none
+
+  G) COUNTRIES: Add all countries (ya sirf India)
+
+================================================================
+STEP 7: STORE LISTING — GAME KA DWAR SAJAO
+================================================================
+
+  Left menu -> "Main store listing":
+
+  - App name: Colour Bricks Crush
+  - Short description (80 letters):
+    "500 levels, 10 worlds ka colour matching puzzle
+    game! Rockets, bombs aur rainbow blasts ke saath!"
+  - Full description (4000 tak):
+    Kya kya hai likho — 500 levels, snake map, boosters,
+    daily bonus, BOSS levels, offline chalta hai, bachho
+    ke liye friendly...
+  - Screenshots: phone se game khelte hue 2-4 screenshots
+    lo (map, board, FINALE blast) -> upload
+  - Feature graphic: Canva pe 1024x500 banner banao
+  - App icon: 512x512 wala PNG (icon-512.png)
+  - Category: PUZZLE / GAME -> Casual
+
+================================================================
+STEP 8: SABSE ZAROORI — TESTING (NAYE ACCOUNT KE LIYE)
+================================================================
+
+  AGAR AAPKA NAYA PERSONAL ACCOUNT HAI:
+  Google ka rule: pehle 20 testers ke saath 14 din ka
+  closed test karna ZAROORI hai!
+
+  1. Left menu -> Testing -> Closed testing
+  2. "Create track" -> naam do: "Friends testing"
+  3. PWABuilder ki .aab file upload karo
+  4. Email list banao — 20 dost/family members ke emails
+     (Gmail ids). Unhe email jayega, woh accept karenge
+  5. Opt-in link copy karke sabko WhatsApp/bhejo
+  6. Woh link khol ke app INSTALL karein aur khelen
+  7. 14 din tak wait (testers active rahen)
+  8. Production access request kar sakte ho phir
+
+  (Agar purana/organization account hai to yeh step skip —
+   seedha production)
+
+================================================================
+STEP 9: PRODUCTION — AAM KHAS HAMARA APP!
+================================================================
+
+  1. Production (left menu) -> "Create new release"
+  2. .aab upload karo
+  3. Release notes likho: "First release! 500 levels!"
+  4. Countries: sab ya India
+  5. "Review release" -> "Start rollout to Production"
+  6. Google review: 1-7 din
+  7. APPROVED = AAPKA GAME PLAY STORE PE LIVE! 🎉
+  8. Link sabko bhejo, duniya khelo!
+
+================================================================
+STEP 10: GAME UPDATE KARNA HO TO
+================================================================
+
+  1. Game file (colour-bricks-game.html) mein changes karo
+  2. GitHub pe wahi file update karo (upload karke commit)
+  3. PWABuilder pe naya package banao — SAME Package ID,
+     version badhao (1.0.0 -> 1.0.1)
+  4. SAME SIGNING KEY use hoga (yehi backup rakha tha!)
+  5. Play Console -> Production -> new release -> upload
+  6. 1-2 din review -> update live!
+
+  BONUS: Web update (naya level/content) to sirf GitHub
+  pe file badlo — app apne aap update ho jayega, Play
+  Store approval bhi nahi chahiye!
+
+================================================================
+KHARCHA KA HISAB
+================================================================
+
+  Website (GitHub Pages) : FREE
+  Android app file       : FREE (PWABuilder)
+  Play Console account   : $25 EK BAAR (lifetime)
+  20 testers             : FREE (dost/family)
+  ------------------------------------------
+  TOTAL                  : sirf $25 (₹2,100 approx)
+
+================================================================
+SAMAY KA HISAB
+================================================================
+
+  Icon + website          : 30 minute
+  App file (.aab)         : 15 minute
+  Forms + listing         : 1 ghanta
+  Account approval        : 1-2 din
+  Closed testing (naya)   : 14 din (20 testers)
+  Production review       : 1-7 din
+  ------------------------------------------
+  Total (naya account)   : ~3 hafte
+  Total (purana account)  : ~1 hafta
+
+================================================================
+EK LINE MEIN
+================================================================
+
+  Icons banao -> GitHub pe free daalo -> PWABuilder se
+  .aab banao (signing key Sambhalo!) -> $25 dekar Play
+  Console account banao -> forms bharo -> 20 testers 14
+  din -> production -> LIVE! 🚀
